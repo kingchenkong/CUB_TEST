@@ -1,5 +1,6 @@
 package com.example.cub_test.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity(), UserListContract.View {
                 json: GitHubUsersJSONItem
             ) {
                 // intent to detail
+                intentDetail(json)
             }
         }
 
@@ -70,6 +72,18 @@ class MainActivity : AppCompatActivity(), UserListContract.View {
             binding.rvList.layoutManager = linearLayoutManager
             binding.rvList.adapter = usersListAdapter
         }
+    }
+
+
+    // intent method
+    private fun intentDetail(json: GitHubUsersJSONItem) {
+        val bundle = Bundle()
+        bundle.putSerializable("json", json)
+
+        val intent = Intent()
+        intent.putExtras(bundle)
+        intent.setClass(this@MainActivity, DetailActivity::class.java)
+        startActivity(intent)
     }
 
 }

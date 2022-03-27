@@ -32,8 +32,10 @@ class DetailActivity : AppCompatActivity() {
 
     // listener
     private fun setListener() {
-
+        // back to user list
+        binding.ivClose.setOnClickListener {
+            finish()
+        }
     }
-
-
+    
 }
