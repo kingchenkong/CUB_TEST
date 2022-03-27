@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../CUB_test/andorid/app/src/main/res/drawable/badge.xml" value="0.2655" />
         <entry key="../../CUB_test/andorid/app/src/main/res/layout/activity_main.xml" value="0.29936594202898553" />
+        <entry key="../../CUB_test/andorid/app/src/main/res/layout/item_users_list.xml" value="0.29936594202898553" />
       </map>
     </option>
   </component>

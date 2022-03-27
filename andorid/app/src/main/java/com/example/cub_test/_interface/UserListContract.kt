@@ -4,7 +4,7 @@ import com.example.cub_test.model.json_data.GitHubUsersJSONItem
 
 interface UserListContract {
     interface View {
-        fun updateRecyclerView()
+        fun updateRecyclerView(list: List<GitHubUsersJSONItem>)
     }
 
     interface Presenter {
