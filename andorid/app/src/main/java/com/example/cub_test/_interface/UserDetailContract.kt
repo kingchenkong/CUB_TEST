@@ -5,6 +5,7 @@ import com.example.cub_test.model.json_data.GitHubUserDetailJSON
 interface UserDetailContract {
     interface View {
         fun updateView(json: GitHubUserDetailJSON)
+        fun showErrorAlert()
     }
 
     interface Presenter {
