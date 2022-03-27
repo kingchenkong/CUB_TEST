@@ -49,7 +49,7 @@ object GitHubApiService {
     }
 
     /**
-     * 查詢 使用者 列表
+     * 查詢 使用者 細節
      */
     suspend fun queryUsersDetail(
         userName: String
